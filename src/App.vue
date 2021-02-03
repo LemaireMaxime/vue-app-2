@@ -1,11 +1,29 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/test">test</router-link>
-    </div>
-    <router-view/>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/">Profil</a>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <router-link class="nav-link" to="/films">Films</router-link>
+          </li>
+          <li class="nav-item active">
+            <router-link class="nav-link" to="/series">Series</router-link>
+          </li>
+          <li class="nav-item active">
+            <router-link class="nav-link" to="/recherche">Recherche</router-link>
+          </li>
+          <li class="nav-item active">
+            <router-link class="nav-link" to="/favoris">Favoris</router-link>
+          </li>
+          <li class="nav-item active">
+            <router-link class="nav-link" to="/vues">Déjâ Vue</router-link>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <router-view></router-view>
   </div>
 </template>
 
