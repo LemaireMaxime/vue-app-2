@@ -1,14 +1,14 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/profil.vue'
+
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'profil',
-    component: () => import('../views/profil.vue')
+    name: 'films',
+    component: () => import('../views/films.vue')
   },
   {
     path: '/films',
@@ -30,11 +30,6 @@ const routes = [
     name: 'favoris',
     component: () => import('../views/favoris.vue')
   },
-  {
-    path: '/vues',
-    name: 'vues',
-    component: () => import('../views/dejaVue.vue')
-  }
 ]
 
 const router = new VueRouter({
